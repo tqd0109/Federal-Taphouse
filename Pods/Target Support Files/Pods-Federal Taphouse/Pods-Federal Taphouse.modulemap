@@ -1,0 +1,6 @@
+framework module Pods_Federal_Taphouse {
+  umbrella header "Pods-Federal Taphouse-umbrella.h"
+
+  export *
+  module * { export * }
+}
