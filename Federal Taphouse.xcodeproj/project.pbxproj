@@ -21,9 +21,10 @@
 		AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A501D7F37FA00137A58 /* BackTableVC.swift */; };
 		AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A521D7F3FE000137A58 /* Menu.swift */; };
 		AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A541D7F3FEC00137A58 /* Invite.swift */; };
-		AAA86A571D7F3FF900137A58 /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A561D7F3FF900137A58 /* AboutUs.swift */; };
 		AAA86A591D7F400500137A58 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A581D7F400500137A58 /* ContactUs.swift */; };
 		AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A5A1D7F401C00137A58 /* Deals.swift */; };
+		AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A5C1D7F4B3600137A58 /* FindUs.swift */; };
+		AAA86A611D7F549000137A58 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A601D7F549000137A58 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +48,10 @@
 		AAA86A501D7F37FA00137A58 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		AAA86A521D7F3FE000137A58 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		AAA86A541D7F3FEC00137A58 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
-		AAA86A561D7F3FF900137A58 /* AboutUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
 		AAA86A581D7F400500137A58 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		AAA86A5A1D7F401C00137A58 /* Deals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deals.swift; sourceTree = "<group>"; };
+		AAA86A5C1D7F4B3600137A58 /* FindUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUs.swift; sourceTree = "<group>"; };
+		AAA86A601D7F549000137A58 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +92,11 @@
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A4E1D7F36D300137A58 /* ViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
+				AAA86A601D7F549000137A58 /* Data.swift */,
 				AAA86A521D7F3FE000137A58 /* Menu.swift */,
 				AAA86A541D7F3FEC00137A58 /* Invite.swift */,
 				AAA86A5A1D7F401C00137A58 /* Deals.swift */,
-				AAA86A561D7F3FF900137A58 /* AboutUs.swift */,
+				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
 				AAA86A581D7F400500137A58 /* ContactUs.swift */,
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
 				AAA86A391D7F284300137A58 /* Assets.xcassets */,
@@ -250,13 +253,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */,
 				AAA86A591D7F400500137A58 /* ContactUs.swift in Sources */,
 				AAA86A4F1D7F36D300137A58 /* ViewController.swift in Sources */,
 				AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */,
 				AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */,
 				AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */,
-				AAA86A571D7F3FF900137A58 /* AboutUs.swift in Sources */,
 				AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */,
+				AAA86A611D7F549000137A58 /* Data.swift in Sources */,
 				AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */,
 				AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */,
 				AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */,

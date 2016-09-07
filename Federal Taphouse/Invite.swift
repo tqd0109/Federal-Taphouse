@@ -11,5 +11,6 @@ import Foundation
 class Invite: UIViewController{
     override func viewDidLoad() {
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+
     }
 }
