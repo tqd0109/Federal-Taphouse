@@ -7,39 +7,46 @@
 //
 
 import Foundation
-//import MapKit
+import MapKit
+import CoreLocation
 
-class FindUs: UITableViewController{
+class FindUs: UITableViewController, MKMapViewDelegate, CLLocationManagerDelegate{
     
-//    @IBOutlet var theMapView: MKMapView!
+    @IBOutlet var mapView: MKMapView!
+    
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         
-//        let latitude:CLLocationDegrees = 48.399193
-//        let longtitude:CLLocationDegrees = 9.993341
-//        
-//        let latDelta:CLLocationDegrees = 0.01
-//        let longDelta:CLLocationDegrees = 0.01
-//        
-//        let theSpan: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
-//        
-//        let wantedLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longtitude)
-//        
-//        let theRegion: MKCoordinateRegion = MKCoordinateRegionMake(wantedLocation, theSpan)
-//        
-//        self.theMapView.setRegion(theRegion, animated: true)
-//        
-//        let wantedAnnotation = MKPointAnnotation()
-//        
-//        wantedAnnotation.coordinate = wantedLocation
-//        
-//        wantedAnnotation.title = "Federal Taphouse Lancaster"
-//        wantedAnnotation.subtitle = "201 N Queen Street Lancaster, Pennsylvania"
-//        
-//        self.theMapView.addAnnotation(wantedAnnotation)
+        self.locationManager.delegate = self
         
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        self.locationManager.startUpdatingLocation()
+        
+        self.mapView.showsUserLocation = true
+
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        
+        let location = locations.last
+        
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        
+        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        
+        self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Errors: " + error.localizedDescription)
     }
 }
