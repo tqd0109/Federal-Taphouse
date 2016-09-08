@@ -11,6 +11,7 @@ import FirebaseAuth
 import UIKit
 import GoogleSignIn
 import LocalAuthentication
+import Firebase
 
 class Helper{
     static let helper = Helper()

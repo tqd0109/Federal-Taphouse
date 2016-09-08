@@ -9,6 +9,7 @@
 import UIKit
 import GoogleSignIn
 import LocalAuthentication
+import Firebase
 
 class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
@@ -27,9 +28,65 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
 
 
     @IBAction func loginButtonTapped(sender: AnyObject) {
+        if self.emailField.text == "" || self.passwordField.text == ""{
+            let alertController = UIAlertController(title: "Oops", message: "Please enter email and password", preferredStyle: .Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else{
+            FIRAuth.auth()?.signInWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
+                if error == nil{
+                    self.emailField.text = ""
+                    self.passwordField.text = ""
+                    
+                    // Create a main storyboard instance
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    
+                    // Instantiate a navigation controller
+                    let naviVC = storyboard.instantiateViewControllerWithIdentifier("NavigationVC") as! SecondNavigationController
+                    
+                    // Get the app delegate
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    
+                    // Set navigation controller as root view controller
+                    appDelegate.window?.rootViewController = naviVC
+                }
+                else{
+                    let alertController = UIAlertController(title: "Oops", message: error?.localizedDescription, preferredStyle: .Alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+            })
+        }
     }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
+        if self.emailField.text == "" || self.passwordField.text == ""{
+            let alertController = UIAlertController(title: "Oops", message: "Please enter email and password", preferredStyle: .Alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        else{
+            FIRAuth.auth()?.createUserWithEmail(self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
+                if error == nil{
+                    self.emailField.text = ""
+                    self.passwordField.text = ""
+                }
+                else{
+                    let alertController = UIAlertController(title: "Oops", message: error?.localizedDescription, preferredStyle: .Alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }
+            })
+        }
     }
     
     @IBAction func forgotPasswordButtonTapped(sender: AnyObject) {
