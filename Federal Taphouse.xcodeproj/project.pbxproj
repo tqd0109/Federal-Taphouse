@@ -17,7 +17,6 @@
 		AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A461D7F2F1300137A58 /* HomeViewController.swift */; };
 		AAA86A491D7F30D900137A58 /* fed.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A481D7F30D900137A58 /* fed.png */; };
 		AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */; };
-		AAA86A4F1D7F36D300137A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A4E1D7F36D300137A58 /* ViewController.swift */; };
 		AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A501D7F37FA00137A58 /* BackTableVC.swift */; };
 		AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A521D7F3FE000137A58 /* Menu.swift */; };
 		AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A541D7F3FEC00137A58 /* Invite.swift */; };
@@ -28,6 +27,8 @@
 		AAA86A651D7FD8D600137A58 /* SecondNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A641D7FD8D600137A58 /* SecondNavigationController.swift */; };
 		AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1D1D81A21A0009342D /* Logout.swift */; };
 		AACB7F201D81A4FB0009342D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1F1D81A4FB0009342D /* Helper.swift */; };
+		AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */; };
+		AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F231D81C0190009342D /* ThirdNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Federal Taphouse-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		AAA86A4E1D7F36D300137A58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAA86A501D7F37FA00137A58 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		AAA86A521D7F3FE000137A58 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		AAA86A541D7F3FEC00137A58 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		AAA86A641D7FD8D600137A58 /* SecondNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondNavigationController.swift; sourceTree = "<group>"; };
 		AACB7F1D1D81A21A0009342D /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		AACB7F231D81C0190009342D /* ThirdNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,8 @@
 				AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */,
 				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
-				AAA86A4E1D7F36D300137A58 /* ViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
+				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
 				AACB7F1F1D81A4FB0009342D /* Helper.swift */,
 				AAA86A601D7F549000137A58 /* Data.swift */,
 				AAA86A521D7F3FE000137A58 /* Menu.swift */,
@@ -106,6 +108,7 @@
 				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
 				AAA86A581D7F400500137A58 /* ContactUs.swift */,
 				AAA86A641D7FD8D600137A58 /* SecondNavigationController.swift */,
+				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 				AACB7F1D1D81A21A0009342D /* Logout.swift */,
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
 				AAA86A391D7F284300137A58 /* Assets.xcassets */,
@@ -262,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */,
 				AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */,
 				AAA86A591D7F400500137A58 /* ContactUs.swift in Sources */,
 				AACB7F201D81A4FB0009342D /* Helper.swift in Sources */,
-				AAA86A4F1D7F36D300137A58 /* ViewController.swift in Sources */,
 				AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */,
 				AAA86A651D7FD8D600137A58 /* SecondNavigationController.swift in Sources */,
 				AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */,
@@ -277,6 +280,7 @@
 				AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */,
 				AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */,
 				AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */,
+				AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

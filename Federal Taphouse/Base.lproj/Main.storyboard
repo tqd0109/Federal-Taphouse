@@ -126,6 +126,7 @@
                             <constraint firstItem="TX1-YE-YVM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="zBN-Ym-ohI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rOt-c9-hHZ"/>
                     <connections>
                         <outlet property="emailField" destination="Fp1-ES-wLV" id="qE1-Iu-yAC"/>
                         <outlet property="passwordField" destination="ILO-2w-qhk" id="TcR-6K-mh8"/>
@@ -134,6 +135,85 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-491" y="727"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="5Uo-Wk-IFs">
+            <objects>
+                <viewController id="f5f-mN-cZr" customClass="ForgotPasswordViewController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jWd-oI-RRG"/>
+                        <viewControllerLayoutGuide type="bottom" id="vaH-3v-B2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwY-gU-dEh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ty9-IU-SM9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter your email: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nru-Eq-A5c">
+                                <rect key="frame" x="20" y="124" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gY6-6h-XvS">
+                                <rect key="frame" x="20" y="161" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt1-Pr-0aw">
+                                <rect key="frame" x="235" y="222" width="131" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="5JC-VS-FLH"/>
+                                </constraints>
+                                <state key="normal" title="Reset Password">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="f5f-mN-cZr" eventType="touchUpInside" id="Ohk-GV-ReG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH1-Rz-ItJ">
+                                <rect key="frame" x="235" y="273" width="131" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="f5f-mN-cZr" eventType="touchUpInside" id="xgh-zj-gC7"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="1G4-Wn-FNF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nru-Eq-A5c" firstAttribute="trailing" secondItem="gY6-6h-XvS" secondAttribute="trailing" id="8eZ-aa-bPU"/>
+                            <constraint firstItem="Ty9-IU-SM9" firstAttribute="centerX" secondItem="gY6-6h-XvS" secondAttribute="centerX" id="Cmi-3l-Z8s"/>
+                            <constraint firstItem="Ty9-IU-SM9" firstAttribute="top" secondItem="gwY-gU-dEh" secondAttribute="top" id="Dyv-jN-h2e"/>
+                            <constraint firstItem="Ty9-IU-SM9" firstAttribute="leading" secondItem="gwY-gU-dEh" secondAttribute="leading" id="Ja9-5j-KkO"/>
+                            <constraint firstItem="nru-Eq-A5c" firstAttribute="leading" secondItem="gwY-gU-dEh" secondAttribute="leadingMargin" id="JfY-nX-C5q"/>
+                            <constraint firstItem="nru-Eq-A5c" firstAttribute="top" secondItem="jWd-oI-RRG" secondAttribute="bottom" constant="104" id="M7B-U1-gR8"/>
+                            <constraint firstItem="Mt1-Pr-0aw" firstAttribute="leading" secondItem="aH1-Rz-ItJ" secondAttribute="leading" id="PcE-P9-eBV"/>
+                            <constraint firstItem="nru-Eq-A5c" firstAttribute="trailing" secondItem="gwY-gU-dEh" secondAttribute="trailingMargin" id="Qf0-On-ZY6"/>
+                            <constraint firstItem="gY6-6h-XvS" firstAttribute="centerX" secondItem="Mt1-Pr-0aw" secondAttribute="centerX" id="T4X-w6-5Qz"/>
+                            <constraint firstItem="Ty9-IU-SM9" firstAttribute="bottom" secondItem="vaH-3v-B2i" secondAttribute="top" id="Vkw-8B-rV0"/>
+                            <constraint firstItem="Mt1-Pr-0aw" firstAttribute="trailing" secondItem="aH1-Rz-ItJ" secondAttribute="trailing" id="dOa-wp-W1V"/>
+                            <constraint firstItem="gY6-6h-XvS" firstAttribute="top" secondItem="nru-Eq-A5c" secondAttribute="bottom" constant="16" id="j4c-9m-l4j"/>
+                            <constraint firstItem="aH1-Rz-ItJ" firstAttribute="top" secondItem="Mt1-Pr-0aw" secondAttribute="bottom" constant="21" id="vlS-VT-cUN"/>
+                            <constraint firstItem="Mt1-Pr-0aw" firstAttribute="top" secondItem="gY6-6h-XvS" secondAttribute="bottom" constant="31" id="yct-mQ-CGS"/>
+                            <constraint firstItem="nru-Eq-A5c" firstAttribute="leading" secondItem="gY6-6h-XvS" secondAttribute="leading" id="zJJ-xT-iMZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mcW-ja-lAf"/>
+                    <connections>
+                        <outlet property="emailField" destination="gY6-6h-XvS" id="a3y-92-KD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYb-mA-h6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="1576"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Z4H-sh-cbS">
@@ -314,7 +394,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYG-V5-Twa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="1539"/>
+            <point key="canvasLocation" x="1413" y="1539"/>
         </scene>
         <!--Deals-->
         <scene sceneID="A15-pV-8Vm">
@@ -333,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouR-AZ-JXn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498" y="1141"/>
+            <point key="canvasLocation" x="3310" y="1141"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="IwS-BB-BhQ">
@@ -370,7 +450,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74m-Me-6r0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608" y="1926"/>
+            <point key="canvasLocation" x="2420" y="1926"/>
         </scene>
         <!--Logout-->
         <scene sceneID="UjJ-vz-BN1">
@@ -388,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AH-re-dWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="1926"/>
+            <point key="canvasLocation" x="3048" y="1926"/>
         </scene>
         <!--Find Us-->
         <scene sceneID="pnA-CN-umL">
@@ -440,6 +520,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PX8-qY-B43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="248" y="727"/>
+        </scene>
+        <!--Third Navigation Controller-->
+        <scene sceneID="0s3-a8-kVc">
+            <objects>
+                <navigationController storyboardIdentifier="ThirdNavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="Vhw-Uc-FaQ" customClass="ThirdNavigationController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="HQ7-bF-IV4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NpF-h2-zNE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f5f-mN-cZr" kind="relationship" relationship="rootViewController" id="0WO-j8-u6l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyv-iq-2iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555" y="1576"/>
         </scene>
     </scenes>
     <resources>

@@ -90,6 +90,17 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     }
     
     @IBAction func forgotPasswordButtonTapped(sender: AnyObject) {
+        // Create a main storyboard instance
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate a navigation controller
+        let naviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
+        
+        // Get the app delegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // Set navigation controller as root view controller
+        appDelegate.window?.rootViewController = naviVC
     }
     
     @IBAction func touchIDButtonTapped(sender: AnyObject) {
@@ -116,6 +127,17 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
         }
         print(user.authentication)
         Helper.helper.loginWithGoogle(user.authentication)
+    }
+    
+    func resetPassword(email: String){
+        FIRAuth.auth()?.sendPasswordResetWithEmail(email, completion: { (error) in
+            if error == nil{
+                print("An email with information on how to reset your password has been sent to you")
+            }
+            else{
+                print(error!.localizedDescription)
+            }
+        })
     }
     
 }
