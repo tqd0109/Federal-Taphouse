@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import GoogleSignIn
 
 
 @UIApplicationMain
@@ -22,6 +23,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         
         FIRApp.configure()
         return true
+    }
+    
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        print(url)
+        print(options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String)
+        return GIDSignIn.sharedInstance().handleURL(url, sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String, annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
     }
 
     func applicationWillResignActive(application: UIApplication) {

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import GoogleSignIn
+import LocalAuthentication
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     @IBOutlet var emailField: UITextField!
     
@@ -17,6 +19,9 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        
+        GIDSignIn.sharedInstance().clientID = "889512112077-jmfsp2pq1njicqkhuk2fpbuaq27l0u75.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
     
 
@@ -31,7 +36,31 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func touchIDButtonTapped(sender: AnyObject) {
+       print("Touch ID did finished")
+        Helper.helper.TouchIDCall()
     }
+    
+    
+    @IBAction func guestButtonPressed(sender: AnyObject) {
+        
+        print("guest login did pressed")
+        Helper.helper.guest()
+    }
+    
+    @IBAction func googleLoginButtonPressed(sender: AnyObject) {
+        print("Google login did pressed")
+        GIDSignIn.sharedInstance().signIn()
+    }
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!, withError error: NSError!) {
+        if error != nil{
+            print(error!.localizedDescription)
+            return
+        }
+        print(user.authentication)
+        Helper.helper.loginWithGoogle(user.authentication)
+    }
+    
 }
 
 extension UIViewController {
