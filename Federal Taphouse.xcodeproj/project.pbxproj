@@ -29,6 +29,8 @@
 		AACB7F201D81A4FB0009342D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1F1D81A4FB0009342D /* Helper.swift */; };
 		AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */; };
 		AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F231D81C0190009342D /* ThirdNavigationController.swift */; };
+		AACB7F261D81E07D0009342D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACB7F251D81E07D0009342D /* MapKit.framework */; };
+		AACB7F281D81E0860009342D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACB7F271D81E0860009342D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		AACB7F231D81C0190009342D /* ThirdNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdNavigationController.swift; sourceTree = "<group>"; };
+		AACB7F251D81E07D0009342D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AACB7F271D81E0860009342D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACB7F281D81E0860009342D /* CoreLocation.framework in Frameworks */,
+				AACB7F261D81E07D0009342D /* MapKit.framework in Frameworks */,
 				7CAD9A6658D158792ABDE34C /* Pods_Federal_Taphouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +103,8 @@
 			children = (
 				AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */,
 				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
+				AAA86A641D7FD8D600137A58 /* SecondNavigationController.swift */,
+				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
 				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
@@ -107,8 +115,6 @@
 				AAA86A5A1D7F401C00137A58 /* Deals.swift */,
 				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
 				AAA86A581D7F400500137A58 /* ContactUs.swift */,
-				AAA86A641D7FD8D600137A58 /* SecondNavigationController.swift */,
-				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 				AACB7F1D1D81A21A0009342D /* Logout.swift */,
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
 				AAA86A391D7F284300137A58 /* Assets.xcassets */,
@@ -126,6 +132,8 @@
 		DC1D9CD7E7F4D703F019134A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AACB7F271D81E0860009342D /* CoreLocation.framework */,
+				AACB7F251D81E07D0009342D /* MapKit.framework */,
 				146228709DB1D815F419F874 /* Pods_Federal_Taphouse.framework */,
 			);
 			name = Frameworks;

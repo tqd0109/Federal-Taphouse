@@ -10,43 +10,31 @@ import Foundation
 import MapKit
 import CoreLocation
 
-class FindUs: UITableViewController, MKMapViewDelegate, CLLocationManagerDelegate{
+class FindUs: UITableViewController{
     
     @IBOutlet var mapView: MKMapView!
-    
-    let locationManager = CLLocationManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        let location = CLLocationCoordinate2DMake(48.87146, 2.35500)
         
-        self.locationManager.delegate = self
+        let span = MKCoordinateSpanMake(0.0002, 0.0002)
         
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        let region = MKCoordinateRegion(center: location, span: span)
         
-        self.locationManager.requestWhenInUseAuthorization()
+        mapView.setRegion(region, animated: true)
         
-        self.locationManager.startUpdatingLocation()
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Federal Taphouse"
+        annotation.subtitle = "Awesome drinking place"
         
-        self.mapView.showsUserLocation = true
+        mapView.addAnnotation(annotation)
+        
+        
+    }
 
-    }
-    
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-        
-        let location = locations.last
-        
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        
-        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        
-        self.mapView.setRegion(region, animated: true)
-        
-        self.locationManager.stopUpdatingLocation()
-    }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("Errors: " + error.localizedDescription)
-    }
+
 }

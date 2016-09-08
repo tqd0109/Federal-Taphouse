@@ -21,7 +21,7 @@ class Invite: UIViewController, MFMessageComposeViewControllerDelegate{
     @IBAction func sendText(sender: AnyObject) {
         if (MFMessageComposeViewController.canSendText()) {
             let controller = MFMessageComposeViewController()
-            controller.body = "Message Body"
+            controller.body = "Hey! Come get some drinks with me at Federal Taphouse. You can use this link: http://www.federaltaphouselanc.com"
             controller.recipients = [phoneNumber.text!]
             controller.messageComposeDelegate = self
             self.presentViewController(controller, animated: true, completion: nil)

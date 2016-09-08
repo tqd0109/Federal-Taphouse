@@ -255,7 +255,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="0j9-5W-bHm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="B6B-mW-dNQ"/>
+                                    <segue destination="0j9-5W-bHm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="l2G-5a-sMo"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Invite Friends" id="BgA-9o-yUO">
@@ -288,7 +288,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="oQ2-YU-eXU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="TE7-a5-MsR"/>
+                                    <segue destination="oQ2-YU-eXU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="X1k-uB-dhX"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contact Us" id="kaI-Zc-91u">
@@ -299,7 +299,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gTp-s6-gIh" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Qzq-b0-sa9"/>
+                                    <segue destination="gTp-s6-gIh" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="YYo-zu-wTZ"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" id="G2c-7s-Rnf">
@@ -310,7 +310,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="qi3-2r-5fW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="jeP-kT-AII"/>
+                                    <segue destination="qi3-2r-5fW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="hvD-Hx-TAb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -512,25 +512,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-fC-cpC">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N9N-fC-cpC">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="oQ2-YU-eXU" id="Iek-hY-giM"/>
+                                    <outletCollection property="gestureRecognizers" destination="gsm-ha-ZIS" appends="YES" id="WQF-5Q-HvS"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="N9N-fC-cpC" firstAttribute="leading" secondItem="Wfk-6x-Z3z" secondAttribute="leading" id="NTq-4V-nAg"/>
-                            <constraint firstAttribute="trailing" secondItem="N9N-fC-cpC" secondAttribute="trailing" id="VQ5-N0-DUf"/>
-                            <constraint firstItem="N9N-fC-cpC" firstAttribute="bottom" secondItem="yso-Cv-Yya" secondAttribute="top" id="XMK-Qn-vAs"/>
-                            <constraint firstItem="N9N-fC-cpC" firstAttribute="top" secondItem="Wfk-6x-Z3z" secondAttribute="top" id="kra-eI-f38"/>
+                            <constraint firstItem="N9N-fC-cpC" firstAttribute="centerY" secondItem="Wfk-6x-Z3z" secondAttribute="centerY" id="BOy-2u-Aji"/>
+                            <constraint firstItem="N9N-fC-cpC" firstAttribute="centerX" secondItem="Wfk-6x-Z3z" secondAttribute="centerX" id="t6t-zD-Vua"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kLM-8P-NHS"/>
                     <connections>
                         <outlet property="mapView" destination="N9N-fC-cpC" id="u87-QG-dwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZH2-kx-QkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gsm-ha-ZIS">
+                    <connections>
+                        <action selector="addPin:" destination="oQ2-YU-eXU" id="fiC-hP-lbI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1061" y="2654"/>
+            <point key="canvasLocation" x="1873" y="2654"/>
         </scene>
         <!--Second Navigation Controller-->
         <scene sceneID="n0F-FB-DUs">
@@ -575,6 +584,6 @@
         <image name="fed.png" width="978" height="499"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UXE-fW-Zsf"/>
+        <segue reference="Qgx-n7-DgE"/>
     </inferredMetricsTieBreakers>
 </document>
