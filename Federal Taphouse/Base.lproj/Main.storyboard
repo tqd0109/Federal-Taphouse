@@ -372,12 +372,42 @@
                     <view key="view" contentMode="scaleToFill" id="Sn0-9y-tQ4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="kVR-Jr-4aP">
+                                <rect key="frame" x="20" y="204" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cK3-dK-XlM">
+                                <rect key="frame" x="235" y="260" width="131" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="Fsg-lr-c5C"/>
+                                </constraints>
+                                <state key="normal" title="Send Invitation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendText:" destination="Tmy-ed-oyS" eventType="touchUpInside" id="yUd-Kx-ZXc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kVR-Jr-4aP" firstAttribute="trailing" secondItem="Sn0-9y-tQ4" secondAttribute="trailingMargin" id="4aa-az-tP7"/>
+                            <constraint firstItem="kVR-Jr-4aP" firstAttribute="top" secondItem="0Cj-30-RvE" secondAttribute="bottom" constant="184" id="8oP-Br-Rup"/>
+                            <constraint firstItem="kVR-Jr-4aP" firstAttribute="centerX" secondItem="cK3-dK-XlM" secondAttribute="centerX" id="hWZ-tt-ymS"/>
+                            <constraint firstItem="kVR-Jr-4aP" firstAttribute="leading" secondItem="Sn0-9y-tQ4" secondAttribute="leadingMargin" id="meJ-FG-pFg"/>
+                            <constraint firstItem="cK3-dK-XlM" firstAttribute="top" secondItem="kVR-Jr-4aP" secondAttribute="bottom" constant="26" id="tqY-sK-14B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="phoneNumber" destination="kVR-Jr-4aP" id="Xm1-lb-oZZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgo-qg-KLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492" y="387"/>
+            <point key="canvasLocation" x="2651" y="310"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N5y-35-5OE">
@@ -394,7 +424,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYG-V5-Twa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="1539"/>
+            <point key="canvasLocation" x="1786" y="1488"/>
         </scene>
         <!--Deals-->
         <scene sceneID="A15-pV-8Vm">
