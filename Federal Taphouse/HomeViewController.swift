@@ -26,7 +26,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     }
     
 
-
+    // Login function
     @IBAction func loginButtonTapped(sender: AnyObject) {
         if self.emailField.text == "" || self.passwordField.text == ""{
             let alertController = UIAlertController(title: "Oops", message: "Please enter email and password", preferredStyle: .Alert)
@@ -63,7 +63,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
             })
         }
     }
-    
+    // Create account
     @IBAction func registerButtonTapped(sender: AnyObject) {
         if self.emailField.text == "" || self.passwordField.text == ""{
             let alertController = UIAlertController(title: "Oops", message: "Please enter email and password", preferredStyle: .Alert)
@@ -89,6 +89,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
         }
     }
     
+    // Forgot Password
     @IBAction func forgotPasswordButtonTapped(sender: AnyObject) {
         // Create a main storyboard instance
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -103,18 +104,20 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
         appDelegate.window?.rootViewController = thirdNaviVC
     }
     
+    // Touch ID
     @IBAction func touchIDButtonTapped(sender: AnyObject) {
        print("Touch ID did finished")
         Helper.helper.TouchIDCall()
     }
     
-    
+    // Guest Button
     @IBAction func guestButtonPressed(sender: AnyObject) {
         
         print("guest login did pressed")
         Helper.helper.guest()
     }
     
+    // Google SignIn
     @IBAction func googleLoginButtonPressed(sender: AnyObject) {
         print("Google login did pressed")
         GIDSignIn.sharedInstance().signIn()
@@ -132,7 +135,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     func resetPassword(email: String){
         FIRAuth.auth()?.sendPasswordResetWithEmail(email, completion: { (error) in
             if error == nil{
-                print("An email with information on how to reset your password has been sent to you")
+                print("If your email was regstered on the server side, an email with information on how to reset your password will besent to you")
             }
             else{
                 print(error!.localizedDescription)
@@ -142,6 +145,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     
 }
 
+// Hide keyboard when tapped around - main method
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

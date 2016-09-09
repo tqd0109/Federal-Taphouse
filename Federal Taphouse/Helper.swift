@@ -17,7 +17,6 @@ class Helper{
     static let helper = Helper()
     
     func guest() {
-        // Print message to the console
         print("guest login did pressed")
         
         FIRAuth.auth()?.signInAnonymouslyWithCompletion({ (anonymousUser: FIRUser?, error: NSError?) in
