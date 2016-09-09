@@ -12,6 +12,7 @@
 		AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7101D82F7FE002B0565 /* Twitter.swift */; };
 		AA01E7131D82F808002B0565 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7121D82F808002B0565 /* Instagram.swift */; };
 		AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7141D83064D002B0565 /* SecondNavigationController.swift */; };
+		AA01E71C1D832932002B0565 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E71B1D832932002B0565 /* Beer.swift */; };
 		AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A2F1D7F284300137A58 /* AppDelegate.swift */; };
 		AAA86A351D7F284300137A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A331D7F284300137A58 /* Main.storyboard */; };
 		AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */; };
@@ -43,20 +44,21 @@
 		AA01E70E1D82F7E8002B0565 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
 		AA01E7101D82F7FE002B0565 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		AA01E7121D82F808002B0565 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
-		AA01E7141D83064D002B0565 /* SecondNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondNavigationController.swift; sourceTree = "<group>"; };
+		AA01E7141D83064D002B0565 /* SecondNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondNavigationController.swift; path = "Federal Taphouse/SecondNavigationController.swift"; sourceTree = "<group>"; };
+		AA01E71B1D832932002B0565 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		AAA86A2C1D7F284200137A58 /* Federal Taphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Federal Taphouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA86A2F1D7F284300137A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA86A341D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAA86A371D7F284300137A58 /* Federal_Taphouse.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Federal_Taphouse.xcdatamodel; sourceTree = "<group>"; };
-		AAA86A391D7F284300137A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAA86A391D7F284300137A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Federal Taphouse/Assets.xcassets"; sourceTree = "<group>"; };
 		AAA86A3C1D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AAA86A3E1D7F284300137A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAA86A3E1D7F284300137A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Federal Taphouse/Info.plist"; sourceTree = "<group>"; };
+		AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Federal Taphouse/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAA86A461D7F2F1300137A58 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AAA86A481D7F30D900137A58 /* fed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fed.png; sourceTree = "<group>"; };
-		AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Federal Taphouse-Bridging-Header.h"; sourceTree = "<group>"; };
-		AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		AAA86A481D7F30D900137A58 /* fed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fed.png; path = "Federal Taphouse/fed.png"; sourceTree = "<group>"; };
+		AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Federal Taphouse-Bridging-Header.h"; path = "Federal Taphouse/Federal Taphouse-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "Federal Taphouse/SWRevealViewController.h"; sourceTree = "<group>"; };
+		AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "Federal Taphouse/SWRevealViewController.m"; sourceTree = "<group>"; };
 		AAA86A501D7F37FA00137A58 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		AAA86A521D7F3FE000137A58 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		AAA86A541D7F3FEC00137A58 /* Invite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invite.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		AACB7F1D1D81A21A0009342D /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		AACB7F231D81C0190009342D /* ThirdNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdNavigationController.swift; sourceTree = "<group>"; };
+		AACB7F231D81C0190009342D /* ThirdNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdNavigationController.swift; path = "Federal Taphouse/ThirdNavigationController.swift"; sourceTree = "<group>"; };
 		AACB7F251D81E07D0009342D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AACB7F271D81E0860009342D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -86,6 +88,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA01E7171D8327EF002B0565 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */,
+				AAA86A3E1D7F284300137A58 /* Info.plist */,
+			);
+			name = Plist;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AA01E7181D83281A002B0565 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AAA86A391D7F284300137A58 /* Assets.xcassets */,
+				AAA86A481D7F30D900137A58 /* fed.png */,
+			);
+			name = Image;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AA01E7191D832844002B0565 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */,
+				AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */,
+				AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AA01E71A1D83286F002B0565 /* Supporting NVC */ = {
+			isa = PBXGroup;
+			children = (
+				AA01E7141D83064D002B0565 /* SecondNavigationController.swift */,
+				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
+			);
+			name = "Supporting NVC";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		AAA86A231D7F284200137A58 = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +150,18 @@
 		AAA86A2E1D7F284300137A58 /* Federal Taphouse */ = {
 			isa = PBXGroup;
 			children = (
-				AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */,
-				AAA86A3E1D7F284300137A58 /* Info.plist */,
+				AA01E7191D832844002B0565 /* Supporting Files */,
+				AA01E7181D83281A002B0565 /* Image */,
+				AA01E7171D8327EF002B0565 /* Plist */,
+				AA01E71A1D83286F002B0565 /* Supporting NVC */,
 				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
-				AA01E7141D83064D002B0565 /* SecondNavigationController.swift */,
-				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
 				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
 				AACB7F1F1D81A4FB0009342D /* Helper.swift */,
 				AAA86A601D7F549000137A58 /* Data.swift */,
 				AAA86A521D7F3FE000137A58 /* Menu.swift */,
+				AA01E71B1D832932002B0565 /* Beer.swift */,
 				AAA86A541D7F3FEC00137A58 /* Invite.swift */,
 				AAA86A5A1D7F401C00137A58 /* Deals.swift */,
 				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
@@ -127,13 +171,8 @@
 				AA01E7121D82F808002B0565 /* Instagram.swift */,
 				AACB7F1D1D81A21A0009342D /* Logout.swift */,
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
-				AAA86A391D7F284300137A58 /* Assets.xcassets */,
 				AAA86A3B1D7F284300137A58 /* LaunchScreen.storyboard */,
 				AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */,
-				AAA86A481D7F30D900137A58 /* fed.png */,
-				AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */,
-				AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */,
-				AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */,
 			);
 			path = "Federal Taphouse";
 			sourceTree = "<group>";
@@ -289,6 +328,7 @@
 				AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */,
 				AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */,
 				AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */,
+				AA01E71C1D832932002B0565 /* Beer.swift in Sources */,
 				AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */,
 				AAA86A611D7F549000137A58 /* Data.swift in Sources */,
 				AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */,
