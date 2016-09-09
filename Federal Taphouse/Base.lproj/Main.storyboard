@@ -384,7 +384,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="oQ2-YU-eXU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="NPv-aB-Jrk"/>
+                                    <segue destination="Sy5-hS-T63" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="NPv-aB-Jrk"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contact Us" id="kaI-Zc-91u">
@@ -448,6 +448,7 @@
                             <outlet property="delegate" destination="P4D-vF-kYk" id="29Y-VJ-6qt"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="bVz-Oz-Qti"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wZ-RI-5v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -669,7 +670,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1873" y="2654"/>
+            <point key="canvasLocation" x="2685" y="2654"/>
         </scene>
         <!--Third Navigation Controller-->
         <scene sceneID="0s3-a8-kVc">
@@ -690,6 +691,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyv-iq-2iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-555" y="1576"/>
+        </scene>
+        <!--Second Navigation Controller-->
+        <scene sceneID="hCJ-zO-lLs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sy5-hS-T63" customClass="SecondNavigationController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gdx-ug-X10">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oQ2-YU-eXU" kind="relationship" relationship="rootViewController" id="89Y-0f-qe8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WdC-Zf-YPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873" y="2654"/>
         </scene>
     </scenes>
     <resources>

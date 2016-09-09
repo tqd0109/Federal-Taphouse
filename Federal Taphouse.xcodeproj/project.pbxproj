@@ -11,6 +11,7 @@
 		AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E70E1D82F7E8002B0565 /* Facebook.swift */; };
 		AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7101D82F7FE002B0565 /* Twitter.swift */; };
 		AA01E7131D82F808002B0565 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7121D82F808002B0565 /* Instagram.swift */; };
+		AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7141D83064D002B0565 /* SecondNavigationController.swift */; };
 		AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A2F1D7F284300137A58 /* AppDelegate.swift */; };
 		AAA86A351D7F284300137A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A331D7F284300137A58 /* Main.storyboard */; };
 		AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 		AA01E70E1D82F7E8002B0565 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
 		AA01E7101D82F7FE002B0565 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		AA01E7121D82F808002B0565 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		AA01E7141D83064D002B0565 /* SecondNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondNavigationController.swift; sourceTree = "<group>"; };
 		AAA86A2C1D7F284200137A58 /* Federal Taphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Federal Taphouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA86A2F1D7F284300137A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA86A341D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */,
+				AAA86A3E1D7F284300137A58 /* Info.plist */,
 				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
+				AA01E7141D83064D002B0565 /* SecondNavigationController.swift */,
 				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
@@ -125,7 +129,6 @@
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
 				AAA86A391D7F284300137A58 /* Assets.xcassets */,
 				AAA86A3B1D7F284300137A58 /* LaunchScreen.storyboard */,
-				AAA86A3E1D7F284300137A58 /* Info.plist */,
 				AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */,
 				AAA86A481D7F30D900137A58 /* fed.png */,
 				AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */,
@@ -293,6 +296,7 @@
 				AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */,
 				AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */,
 				AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */,
+				AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */,
 				AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */,
 				AA01E7131D82F808002B0565 /* Instagram.swift in Sources */,
 				AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */,

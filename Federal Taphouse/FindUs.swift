@@ -10,13 +10,18 @@ import Foundation
 import MapKit
 import CoreLocation
 
-class FindUs: UITableViewController{
+class FindUs: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UITextFieldDelegate{
     
     @IBOutlet var mapView: MKMapView!
-
+    
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        enableLocationServices(true)
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         
@@ -31,12 +36,39 @@ class FindUs: UITableViewController{
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = "Federal Taphouse"
-        annotation.subtitle = "Awesome drinking place"
+        annotation.subtitle = "201 N Queen Street Lancaster, Pennsylvania"
         
         mapView.addAnnotation(annotation)
         
         
     }
+    
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        switch status {
+        case .AuthorizedAlways: fallthrough
+        case .AuthorizedWhenInUse:
+            enableLocationServices(true)
+        default:
+            break
+        }
+    }
+    
+    private func enableLocationServices(enabled: Bool) {
+        switch CLLocationManager.authorizationStatus() {
+        case .AuthorizedAlways: fallthrough
+        case .AuthorizedWhenInUse:
+            mapView.showsUserLocation = true
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            if enabled {
+                locationManager.startUpdatingLocation()
+            }
+            else {
+                locationManager.stopUpdatingLocation()
+            }
+        case  .NotDetermined: break
+        case .Denied: break
+        case .Restricted: break
+        }
 
-
+    }
 }
