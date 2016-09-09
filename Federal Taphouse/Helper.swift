@@ -23,7 +23,7 @@ class Helper{
         FIRAuth.auth()?.signInAnonymouslyWithCompletion({ (anonymousUser: FIRUser?, error: NSError?) in
             if error == nil{
                 print("User ID: \(anonymousUser!.uid)")
-                self.switchToNavigationViewController()
+                self.switchToSWRevealViewController()
             }
             else{
                 print(error!.localizedDescription)
@@ -43,7 +43,7 @@ class Helper{
                 print(user?.email)
                 print(user?.displayName)
                 
-                self.switchToNavigationViewController()
+                self.switchToSWRevealViewController()
             }
         })
     }
@@ -57,7 +57,7 @@ class Helper{
                 
                 if wasSuccessful{
                     NSLog("Yes")
-                    self.switchToNavigationViewController()
+                    self.switchToSWRevealViewController()
                 }
                 else{
                     NSLog("No")
@@ -71,18 +71,18 @@ class Helper{
     }
     
     
-    private func switchToNavigationViewController(){
+    private func switchToSWRevealViewController(){
         // Create a main storyboard instance
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Instantiate a navigation controller
-        let naviVC = storyboard.instantiateViewControllerWithIdentifier("NavigationVC") as! SecondNavigationController
+        let revealVC = storyboard.instantiateViewControllerWithIdentifier("RevealVC") as! SWRevealViewController
         
         // Get the app delegate
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         // Set navigation controller as root view controller
-        appDelegate.window?.rootViewController = naviVC
+        appDelegate.window?.rootViewController = revealVC
     }
 
 }

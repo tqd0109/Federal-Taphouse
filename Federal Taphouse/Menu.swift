@@ -16,7 +16,7 @@ class Menu: UITableViewController{
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         
-        self.menu = [Data(name: "Corona"), Data(name: "Budlight"), Data(name: "Pizza"), Data(name: "Burger"), Data(name: "Hot Dog")]
+        self.menu = [Data(name: "House Made Soft Pretzel"), Data(name: "Crispy Calamari"), Data(name: "bacon Jam"), Data(name: "Hummus"), Data(name: "House Made Pierogis"), Data(name: "Coal Fired Wings"), Data(name: "Wood Fired Stuffed Jalapeños"), Data(name: "Devils on Horseback"), Data(name: "Dreamweaver Mussels"), Data(name: "Crab Mac and Cheese"), Data(name: "Charcuterie Board"), Data(name: "Soup of the Day")]
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

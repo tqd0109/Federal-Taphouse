@@ -45,13 +45,13 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     
                     // Instantiate a navigation controller
-                    let naviVC = storyboard.instantiateViewControllerWithIdentifier("NavigationVC") as! SecondNavigationController
+                    let revealVC = storyboard.instantiateViewControllerWithIdentifier("RevealVC") as! SWRevealViewController
                     
                     // Get the app delegate
                     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                     
                     // Set navigation controller as root view controller
-                    appDelegate.window?.rootViewController = naviVC
+                    appDelegate.window?.rootViewController = revealVC
                 }
                 else{
                     let alertController = UIAlertController(title: "Oops", message: error?.localizedDescription, preferredStyle: .Alert)
@@ -94,13 +94,13 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Instantiate a navigation controller
-        let naviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
+        let thirdNaviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
         
         // Get the app delegate
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         // Set navigation controller as root view controller
-        appDelegate.window?.rootViewController = naviVC
+        appDelegate.window?.rootViewController = thirdNaviVC
     }
     
     @IBAction func touchIDButtonTapped(sender: AnyObject) {

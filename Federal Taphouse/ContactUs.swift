@@ -8,28 +8,13 @@
 
 import Foundation
 
-class ContactUs: UITableViewController{
-    
-    var contact = [Data]()
+class ContactUs: UIViewController{
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        self.contact = [Data(name: "Call Us"), Data(name: "Facebook"), Data(name: "Twitter"), Data(name: "Instagram")]
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.contact.count
-    }
-    
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        var getContact : Data
-        
-        getContact = contact[indexPath.row]
-        
-        cell.textLabel?.text = getContact.name
-        
-        return cell
+        UIApplication.sharedApplication().openURL(NSURL(string:"telprompt:7174906932")!)
     }
 }

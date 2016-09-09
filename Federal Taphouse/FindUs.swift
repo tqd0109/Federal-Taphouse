@@ -18,7 +18,9 @@ class FindUs: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let location = CLLocationCoordinate2DMake(48.87146, 2.35500)
+        self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+        
+        let location = CLLocationCoordinate2DMake(40.041667, -76.305836)
         
         let span = MKCoordinateSpanMake(0.0002, 0.0002)
         
