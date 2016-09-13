@@ -41,17 +41,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
                     self.emailField.text = ""
                     self.passwordField.text = ""
                     
-                    // Create a main storyboard instance
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    
-                    // Instantiate a navigation controller
-                    let revealVC = storyboard.instantiateViewControllerWithIdentifier("RevealVC") as! SWRevealViewController
-                    
-                    // Get the app delegate
-                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                    
-                    // Set navigation controller as root view controller
-                    appDelegate.window?.rootViewController = revealVC
+                    self.switchToSWRevealViewController()
                 }
                 else{
                     let alertController = UIAlertController(title: "Oops", message: error?.localizedDescription, preferredStyle: .Alert)
@@ -91,17 +81,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     
     // Forgot Password
     @IBAction func forgotPasswordButtonTapped(sender: AnyObject) {
-        // Create a main storyboard instance
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        // Instantiate a navigation controller
-        let thirdNaviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
-        
-        // Get the app delegate
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        
-        // Set navigation controller as root view controller
-        appDelegate.window?.rootViewController = thirdNaviVC
+        self.switchToNavigationController()
     }
     
     // Touch ID
@@ -141,6 +121,34 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
                 print(error!.localizedDescription)
             }
         })
+    }
+    
+    private func switchToSWRevealViewController(){
+        // Create a main storyboard instance
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate a navigation controller
+        let revealVC = storyboard.instantiateViewControllerWithIdentifier("RevealVC") as! SWRevealViewController
+        
+        // Get the app delegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // Set navigation controller as root view controller
+        appDelegate.window?.rootViewController = revealVC
+    }
+    
+    private func switchToNavigationController(){
+        // Create a main storyboard instance
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate a navigation controller
+        let thirdNaviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
+        
+        // Get the app delegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // Set navigation controller as root view controller
+        appDelegate.window?.rootViewController = thirdNaviVC
     }
     
 }
