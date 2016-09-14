@@ -15,7 +15,6 @@
 		AA01E71C1D832932002B0565 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E71B1D832932002B0565 /* Beer.swift */; };
 		AA01E71F1D834566002B0565 /* twitter logo mask.png in Resources */ = {isa = PBXBuildFile; fileRef = AA01E71D1D834566002B0565 /* twitter logo mask.png */; };
 		AA01E7201D834566002B0565 /* twitterscreen.PNG in Resources */ = {isa = PBXBuildFile; fileRef = AA01E71E1D834566002B0565 /* twitterscreen.PNG */; };
-		AA2DB0F01D886E310027527D /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB0EF1D886E310027527D /* RestAPIManager.swift */; };
 		AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A2F1D7F284300137A58 /* AppDelegate.swift */; };
 		AAA86A351D7F284300137A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A331D7F284300137A58 /* Main.storyboard */; };
 		AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */; };
@@ -32,6 +31,12 @@
 		AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A5A1D7F401C00137A58 /* Deals.swift */; };
 		AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A5C1D7F4B3600137A58 /* FindUs.swift */; };
 		AAA86A611D7F549000137A58 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A601D7F549000137A58 /* Data.swift */; };
+		AAB6B79D1D89D16200E33755 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6B79C1D89D16200E33755 /* InitialViewController.swift */; };
+		AAB6B7A31D89D76200E33755 /* food2.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB6B7A11D89D76200E33755 /* food2.png */; };
+		AAB6B7A71D89E11500E33755 /* TutorialPageContentHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */; };
+		AAB6B7A91D89E22500E33755 /* FirstNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */; };
+		AAB6B7AB1D89E2DD00E33755 /* food1.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB6B7AA1D89E2DD00E33755 /* food1.png */; };
+		AAB6B7AD1D89E36600E33755 /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB6B7AC1D89E36600E33755 /* food.png */; };
 		AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1D1D81A21A0009342D /* Logout.swift */; };
 		AACB7F201D81A4FB0009342D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1F1D81A4FB0009342D /* Helper.swift */; };
 		AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */; };
@@ -51,7 +56,6 @@
 		AA01E71B1D832932002B0565 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		AA01E71D1D834566002B0565 /* twitter logo mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter logo mask.png"; sourceTree = "<group>"; };
 		AA01E71E1D834566002B0565 /* twitterscreen.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterscreen.PNG; sourceTree = "<group>"; };
-		AA2DB0EF1D886E310027527D /* RestAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		AAA86A2C1D7F284200137A58 /* Federal Taphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Federal Taphouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA86A2F1D7F284300137A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA86A341D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,12 @@
 		AAA86A5A1D7F401C00137A58 /* Deals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deals.swift; sourceTree = "<group>"; };
 		AAA86A5C1D7F4B3600137A58 /* FindUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUs.swift; sourceTree = "<group>"; };
 		AAA86A601D7F549000137A58 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AAB6B79C1D89D16200E33755 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		AAB6B7A11D89D76200E33755 /* food2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food2.png; sourceTree = "<group>"; };
+		AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageContentHolderViewController.swift; sourceTree = "<group>"; };
+		AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstNavigationController.swift; path = "Federal Taphouse/FirstNavigationController.swift"; sourceTree = "<group>"; };
+		AAB6B7AA1D89E2DD00E33755 /* food1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food1.png; sourceTree = "<group>"; };
+		AAB6B7AC1D89E36600E33755 /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
 		AACB7F1D1D81A21A0009342D /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +117,9 @@
 		AA01E7181D83281A002B0565 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				AAB6B7AC1D89E36600E33755 /* food.png */,
+				AAB6B7AA1D89E2DD00E33755 /* food1.png */,
+				AAB6B7A11D89D76200E33755 /* food2.png */,
 				AA01E71D1D834566002B0565 /* twitter logo mask.png */,
 				AA01E71E1D834566002B0565 /* twitterscreen.PNG */,
 				AAA86A481D7F30D900137A58 /* fed.png */,
@@ -130,6 +143,7 @@
 		AA01E71A1D83286F002B0565 /* Supporting NVC */ = {
 			isa = PBXGroup;
 			children = (
+				AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */,
 				AA01E7141D83064D002B0565 /* SecondNavigationController.swift */,
 				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 			);
@@ -162,8 +176,9 @@
 				AA01E7181D83281A002B0565 /* Image */,
 				AA01E7171D8327EF002B0565 /* Plist */,
 				AA01E71A1D83286F002B0565 /* Supporting NVC */,
-				AA2DB0EF1D886E310027527D /* RestAPIManager.swift */,
 				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
+				AAB6B79C1D89D16200E33755 /* InitialViewController.swift */,
+				AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
 				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
@@ -268,8 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA86A3D1D7F284300137A58 /* LaunchScreen.storyboard in Resources */,
+				AAB6B7AD1D89E36600E33755 /* food.png in Resources */,
 				AAA86A491D7F30D900137A58 /* fed.png in Resources */,
 				AA01E7201D834566002B0565 /* twitterscreen.PNG in Resources */,
+				AAB6B7AB1D89E2DD00E33755 /* food1.png in Resources */,
+				AAB6B7A31D89D76200E33755 /* food2.png in Resources */,
 				AA01E71F1D834566002B0565 /* twitter logo mask.png in Resources */,
 				AAA86A451D7F299F00137A58 /* GoogleService-Info.plist in Resources */,
 				AAA86A3A1D7F284300137A58 /* Assets.xcassets in Resources */,
@@ -336,21 +354,23 @@
 				AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */,
 				AAA86A591D7F400500137A58 /* ContactUs.swift in Sources */,
 				AACB7F201D81A4FB0009342D /* Helper.swift in Sources */,
-				AA2DB0F01D886E310027527D /* RestAPIManager.swift in Sources */,
 				AAA86A5B1D7F401C00137A58 /* Deals.swift in Sources */,
 				AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */,
 				AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */,
 				AA01E71C1D832932002B0565 /* Beer.swift in Sources */,
 				AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */,
+				AAB6B7A91D89E22500E33755 /* FirstNavigationController.swift in Sources */,
 				AAA86A611D7F549000137A58 /* Data.swift in Sources */,
 				AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */,
 				AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */,
+				AAB6B79D1D89D16200E33755 /* InitialViewController.swift in Sources */,
 				AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */,
 				AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */,
 				AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */,
 				AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */,
 				AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */,
 				AA01E7131D82F808002B0565 /* Instagram.swift in Sources */,
+				AAB6B7A71D89E11500E33755 /* TutorialPageContentHolderViewController.swift in Sources */,
 				AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */,
 				AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */,
 			);

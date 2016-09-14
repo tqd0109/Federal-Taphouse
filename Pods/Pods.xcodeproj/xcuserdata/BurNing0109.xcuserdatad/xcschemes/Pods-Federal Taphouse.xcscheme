@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8857216A6156C64E04EC4E055C39D21"
+               BlueprintIdentifier = "3BAADE3C0E8A40D43790EEF6144ADD93"
                BuildableName = "Pods_Federal_Taphouse.framework"
                BlueprintName = "Pods-Federal Taphouse"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8857216A6156C64E04EC4E055C39D21"
+            BlueprintIdentifier = "3BAADE3C0E8A40D43790EEF6144ADD93"
             BuildableName = "Pods_Federal_Taphouse.framework"
             BlueprintName = "Pods-Federal Taphouse"
             ReferencedContainer = "container:Pods.xcodeproj">

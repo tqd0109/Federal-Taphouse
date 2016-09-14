@@ -6,7 +6,7 @@
 //  Copyright © 2016 Software Merchant. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Beer: UITableViewController {
     var menu = [Data]()

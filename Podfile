@@ -8,5 +8,5 @@ target 'Federal Taphouse' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'GoogleSignIn'
-  pod 'Alamofire', '~> 4.0'
 end
+
