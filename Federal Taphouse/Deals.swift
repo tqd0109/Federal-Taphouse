@@ -16,7 +16,7 @@ class Deals: UITableViewController{
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         
-        self.menu = [Data(name: "$6 Cheesesteaks starting at 5pm"), Data(name: "10 Select beers only $2 from 6pm-8pm"), Data(name: "$1 Oysters beginning at 5pm"), Data(name: "$5 cheese pizzas beginning at 5pm"), Data(name: "Extended Hoppy Hour from 4pm-6pm")]
+        self.menu = [Data(name: "Monday Night - $6 Cheesesteaks starting at 5pm. 10 Select beers only $2 from 6pm-8pm"), Data(name: " Tuesday Night - $6 Cheeseburgers starting at 5pm"), Data(name: "Wednesday Night - Buck a Shucks and IPAs- $2 off all IPAs 6pm-8pm and $1 Oysters beginning at 5pm"), Data(name: "Thursday Night - 1/2 price 10 select beers 6-8pm and $5 cheese pizzas beginning at 5pm"), Data(name: "Friday Night - Extended Hoppy Hour from 4pm-6pm")]
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

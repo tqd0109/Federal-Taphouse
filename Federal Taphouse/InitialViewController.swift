@@ -15,7 +15,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pageImages = NSArray(objects: "food", "food1", "food2")
+        pageImages = NSArray(objects: "Picture1", "Picture2", "Picture3", "Picture4", "Picture5")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MyPageViewController") as! UIPageViewController
         
