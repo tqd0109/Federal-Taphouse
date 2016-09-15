@@ -8,30 +8,96 @@
 
 import UIKit
 
-class Beer: UITableViewController {
-    var menu = [Data]()
+class Beer: UITableViewController, NSXMLParserDelegate {
+    
+    @IBOutlet var tbData: UITableView!
+    
+    var parser = NSXMLParser()
+    var posts = NSMutableArray()
+    var elements = NSMutableDictionary()
+    var element = NSString()
+    var title1 = NSMutableString()
+    var date = NSMutableString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         
-        self.menu = [Data(name: "Guiness"), Data(name: "Blue Moon"), Data(name: "Samuel Adams Boston Lager"), Data(name: "Corona"), Data(name: "Stella Artois"), Data(name: "Dos Equis"), Data(name: "Budweiser") , Data(name: "Sierra Nevada") , Data(name: "Fat Tire") , Data(name: "Yuengling Premium Beer") , Data(name: "Newcastle Brown Ale") , Data(name: "Dogfish Head") , Data(name: "Hoegaarde Witbier") , Data(name: "Michelob") , Data(name: "George Killian's Irish Red") , Data(name: "Foster's Lager") , Data(name: "Labatt Blue") , Data(name: "Chimay") , Data(name: "Sapporo Premium Lager") , Data(name: "Grolsch") , Data(name: "Molson Canadian") , Data(name: "Pilsner Urquell") , Data(name: "Pabst Blue Ribbon") , Data(name: "Amstel Lager")]
+        self.beginParsing()
+        
+        
+    }
+    // Begin parsing
+    func beginParsing()
+    {
+        posts = []
+        parser = NSXMLParser(contentsOfURL:(NSURL(string:"http://images.apple.com/main/rss/hotnews/hotnews.rss"))!)!
+        parser.delegate = self
+        parser.parse()
+        
+        tbData!.reloadData()
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.menu.count
+
+    // Past the value into tableview
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String])
+    {
+        element = elementName
+        if (elementName as NSString).isEqualToString("item")
+        {
+            elements = NSMutableDictionary()
+            elements = [:]
+            title1 = NSMutableString()
+            title1 = ""
+            date = NSMutableString()
+            date = ""
+        }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        
-        var getMenu : Data
-        
-        getMenu = menu[indexPath.row]
-        
-        cell.textLabel?.text = getMenu.name
-        
-        return cell
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)
+    {
+        if (elementName as NSString).isEqualToString("item") {
+            if !title1.isEqual(nil) {
+                elements.setObject(title1, forKey: "title")
+            }
+            if !date.isEqual(nil) {
+                elements.setObject(date, forKey: "date")
+            }
+            
+            posts.addObject(elements)
+        }
     }
+    
+    func parser(parser: NSXMLParser, foundCharacters string: String)
+    {
+        if element.isEqualToString("title") {
+            title1.appendString(string)
+        } else if element.isEqualToString("pubDate") {
+            date.appendString(string)
+        }
+    }
+    
+    //Tableview Methods
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return posts.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        
+        if(cell.isEqual(NSNull)) {
+            cell = NSBundle.mainBundle().loadNibNamed("Cell", owner: self, options: nil)![0] as! UITableViewCell;
+        }
+        
+        cell.textLabel?.text = posts.objectAtIndex(indexPath.row).valueForKey("title") as! NSString as String
+        cell.detailTextLabel?.text = posts.objectAtIndex(indexPath.row).valueForKey("date") as! NSString as String
+        
+        return cell as UITableViewCell
+    }
+
+    
 }
