@@ -13,7 +13,7 @@ class RightTableVCTableViewController: UITableViewController {
     var TableArray = [String]()
     
     override func viewDidLoad() {
-        TableArray = ["Facebook", "Twitter", "Instagram", "Gallery"]
+        TableArray = ["Facebook", "Twitter", "Instagram", "Gallery", "Feedback"]
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

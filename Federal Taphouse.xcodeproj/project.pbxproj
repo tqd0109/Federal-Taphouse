@@ -14,6 +14,8 @@
 		AA01E71C1D832932002B0565 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E71B1D832932002B0565 /* Beer.swift */; };
 		AA1DA7731D8AEEDE005DD04E /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */; };
 		AA8C29621D90706E00009ACF /* RightTableVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */; };
+		AA8C29641D90795E00009ACF /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C29631D90795D00009ACF /* Feedback.swift */; };
+		AA8C29691D90A44800009ACF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8C29681D90A44800009ACF /* MessageUI.framework */; };
 		AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A2F1D7F284300137A58 /* AppDelegate.swift */; };
 		AAA86A351D7F284300137A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A331D7F284300137A58 /* Main.storyboard */; };
 		AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */; };
@@ -21,7 +23,6 @@
 		AAA86A3D1D7F284300137A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A3B1D7F284300137A58 /* LaunchScreen.storyboard */; };
 		AAA86A451D7F299F00137A58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */; };
 		AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A461D7F2F1300137A58 /* HomeViewController.swift */; };
-		AAA86A491D7F30D900137A58 /* fed.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A481D7F30D900137A58 /* fed.png */; };
 		AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */; };
 		AAA86A511D7F37FA00137A58 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A501D7F37FA00137A58 /* BackTableVC.swift */; };
 		AAA86A531D7F3FE000137A58 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A521D7F3FE000137A58 /* Menu.swift */; };
@@ -50,6 +51,8 @@
 		AA01E71B1D832932002B0565 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightTableVCTableViewController.swift; path = ../RightTableVCTableViewController.swift; sourceTree = "<group>"; };
+		AA8C29631D90795D00009ACF /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		AA8C29681D90A44800009ACF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		AAA86A2C1D7F284200137A58 /* Federal Taphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Federal Taphouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA86A2F1D7F284300137A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA86A341D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +62,6 @@
 		AAA86A3E1D7F284300137A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Federal Taphouse/Info.plist"; sourceTree = "<group>"; };
 		AAA86A441D7F299F00137A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Federal Taphouse/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AAA86A461D7F2F1300137A58 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AAA86A481D7F30D900137A58 /* fed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fed.png; path = "Federal Taphouse/fed.png"; sourceTree = "<group>"; };
 		AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Federal Taphouse-Bridging-Header.h"; path = "Federal Taphouse/Federal Taphouse-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "Federal Taphouse/SWRevealViewController.h"; sourceTree = "<group>"; };
 		AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "Federal Taphouse/SWRevealViewController.m"; sourceTree = "<group>"; };
@@ -69,12 +71,12 @@
 		AAA86A581D7F400500137A58 /* ContactUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
 		AAA86A5A1D7F401C00137A58 /* Deals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deals.swift; sourceTree = "<group>"; };
 		AAA86A5C1D7F4B3600137A58 /* FindUs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUs.swift; sourceTree = "<group>"; };
-		AAA86A601D7F549000137A58 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AAA86A601D7F549000137A58 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "Federal Taphouse/Data.swift"; sourceTree = "<group>"; };
 		AAB6B79C1D89D16200E33755 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageContentHolderViewController.swift; sourceTree = "<group>"; };
 		AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstNavigationController.swift; path = "Federal Taphouse/FirstNavigationController.swift"; sourceTree = "<group>"; };
 		AACB7F1D1D81A21A0009342D /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
-		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = "Federal Taphouse/Helper.swift"; sourceTree = "<group>"; };
 		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		AACB7F251D81E07D0009342D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AACB7F271D81E0860009342D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8C29691D90A44800009ACF /* MessageUI.framework in Frameworks */,
 				AACB7F281D81E0860009342D /* CoreLocation.framework in Frameworks */,
 				AACB7F261D81E07D0009342D /* MapKit.framework in Frameworks */,
 				7CAD9A6658D158792ABDE34C /* Pods_Federal_Taphouse.framework in Frameworks */,
@@ -107,7 +110,6 @@
 		AA01E7181D83281A002B0565 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				AAA86A481D7F30D900137A58 /* fed.png */,
 				AAA86A391D7F284300137A58 /* Assets.xcassets */,
 			);
 			name = Image;
@@ -120,6 +122,8 @@
 				AAA86A4B1D7F35D500137A58 /* SWRevealViewController.h */,
 				AAA86A4C1D7F35D500137A58 /* SWRevealViewController.m */,
 				AAA86A4A1D7F35D300137A58 /* Federal Taphouse-Bridging-Header.h */,
+				AACB7F1F1D81A4FB0009342D /* Helper.swift */,
+				AAA86A601D7F549000137A58 /* Data.swift */,
 			);
 			name = "Supporting Files";
 			path = ..;
@@ -132,6 +136,46 @@
 			);
 			name = "Supporting NVC";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		AA8C29651D90A27C00009ACF /* Right Table */ = {
+			isa = PBXGroup;
+			children = (
+				AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */,
+				AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */,
+				AA01E70E1D82F7E8002B0565 /* Facebook.swift */,
+				AA01E7101D82F7FE002B0565 /* Twitter.swift */,
+				AA01E7121D82F808002B0565 /* Instagram.swift */,
+				AA8C29631D90795D00009ACF /* Feedback.swift */,
+			);
+			name = "Right Table";
+			sourceTree = "<group>";
+		};
+		AA8C29661D90A2AA00009ACF /* Left Table */ = {
+			isa = PBXGroup;
+			children = (
+				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
+				AAA86A521D7F3FE000137A58 /* Menu.swift */,
+				AAA86A541D7F3FEC00137A58 /* Invite.swift */,
+				AAA86A5A1D7F401C00137A58 /* Deals.swift */,
+				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
+				AAA86A581D7F400500137A58 /* ContactUs.swift */,
+				AACB7F1D1D81A21A0009342D /* Logout.swift */,
+				AA01E71B1D832932002B0565 /* Beer.swift */,
+			);
+			name = "Left Table";
+			sourceTree = "<group>";
+		};
+		AA8C29671D90A2B300009ACF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
+				AAB6B79C1D89D16200E33755 /* InitialViewController.swift */,
+				AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */,
+				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
+				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
+			);
+			name = Authentication;
 			sourceTree = "<group>";
 		};
 		AAA86A231D7F284200137A58 = {
@@ -155,30 +199,13 @@
 		AAA86A2E1D7F284300137A58 /* Federal Taphouse */ = {
 			isa = PBXGroup;
 			children = (
+				AA8C29671D90A2B300009ACF /* Authentication */,
+				AA8C29661D90A2AA00009ACF /* Left Table */,
+				AA8C29651D90A27C00009ACF /* Right Table */,
 				AA01E7191D832844002B0565 /* Supporting Files */,
 				AA01E7181D83281A002B0565 /* Image */,
 				AA01E7171D8327EF002B0565 /* Plist */,
 				AA01E71A1D83286F002B0565 /* Supporting NVC */,
-				AAA86A2F1D7F284300137A58 /* AppDelegate.swift */,
-				AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */,
-				AAB6B79C1D89D16200E33755 /* InitialViewController.swift */,
-				AA01E71B1D832932002B0565 /* Beer.swift */,
-				AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */,
-				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
-				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
-				AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */,
-				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
-				AACB7F1F1D81A4FB0009342D /* Helper.swift */,
-				AAA86A601D7F549000137A58 /* Data.swift */,
-				AAA86A521D7F3FE000137A58 /* Menu.swift */,
-				AAA86A541D7F3FEC00137A58 /* Invite.swift */,
-				AAA86A5A1D7F401C00137A58 /* Deals.swift */,
-				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
-				AAA86A581D7F400500137A58 /* ContactUs.swift */,
-				AA01E70E1D82F7E8002B0565 /* Facebook.swift */,
-				AA01E7101D82F7FE002B0565 /* Twitter.swift */,
-				AA01E7121D82F808002B0565 /* Instagram.swift */,
-				AACB7F1D1D81A21A0009342D /* Logout.swift */,
 				AAA86A331D7F284300137A58 /* Main.storyboard */,
 				AAA86A3B1D7F284300137A58 /* LaunchScreen.storyboard */,
 				AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */,
@@ -189,6 +216,7 @@
 		DC1D9CD7E7F4D703F019134A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA8C29681D90A44800009ACF /* MessageUI.framework */,
 				AACB7F271D81E0860009342D /* CoreLocation.framework */,
 				AACB7F251D81E07D0009342D /* MapKit.framework */,
 				146228709DB1D815F419F874 /* Pods_Federal_Taphouse.framework */,
@@ -268,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA86A3D1D7F284300137A58 /* LaunchScreen.storyboard in Resources */,
-				AAA86A491D7F30D900137A58 /* fed.png in Resources */,
 				AAA86A451D7F299F00137A58 /* GoogleService-Info.plist in Resources */,
 				AAA86A3A1D7F284300137A58 /* Assets.xcassets in Resources */,
 				AAA86A351D7F284300137A58 /* Main.storyboard in Resources */,
@@ -344,6 +371,7 @@
 				AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */,
 				AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */,
 				AA8C29621D90706E00009ACF /* RightTableVCTableViewController.swift in Sources */,
+				AA8C29641D90795E00009ACF /* Feedback.swift in Sources */,
 				AAB6B79D1D89D16200E33755 /* InitialViewController.swift in Sources */,
 				AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */,
 				AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */,
