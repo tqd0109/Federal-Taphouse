@@ -81,7 +81,7 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
     
     // Forgot Password
     @IBAction func forgotPasswordButtonTapped(sender: AnyObject) {
-        self.switchToNavigationController()
+        self.switchToForgotPasswordViewController()
     }
     
     // Touch ID
@@ -136,19 +136,18 @@ class HomeViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelega
         // Set navigation controller as root view controller
         appDelegate.window?.rootViewController = revealVC
     }
-    
-    private func switchToNavigationController(){
+    private func switchToForgotPasswordViewController(){
         // Create a main storyboard instance
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         // Instantiate a navigation controller
-        let thirdNaviVC = storyboard.instantiateViewControllerWithIdentifier("ThirdNavigationVC") as! ThirdNavigationController
+        let forgotVC = storyboard.instantiateViewControllerWithIdentifier("ForgotPasswordVC") as! ForgotPasswordViewController
         
         // Get the app delegate
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         // Set navigation controller as root view controller
-        appDelegate.window?.rootViewController = thirdNaviVC
+        appDelegate.window?.rootViewController = forgotVC
     }
     
 }

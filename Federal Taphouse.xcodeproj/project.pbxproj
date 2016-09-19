@@ -11,9 +11,9 @@
 		AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E70E1D82F7E8002B0565 /* Facebook.swift */; };
 		AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7101D82F7FE002B0565 /* Twitter.swift */; };
 		AA01E7131D82F808002B0565 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7121D82F808002B0565 /* Instagram.swift */; };
-		AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7141D83064D002B0565 /* SecondNavigationController.swift */; };
 		AA01E71C1D832932002B0565 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E71B1D832932002B0565 /* Beer.swift */; };
 		AA1DA7731D8AEEDE005DD04E /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */; };
+		AA8C29621D90706E00009ACF /* RightTableVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */; };
 		AAA86A301D7F284300137A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A2F1D7F284300137A58 /* AppDelegate.swift */; };
 		AAA86A351D7F284300137A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA86A331D7F284300137A58 /* Main.storyboard */; };
 		AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAA86A361D7F284300137A58 /* Federal_Taphouse.xcdatamodeld */; };
@@ -36,7 +36,6 @@
 		AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1D1D81A21A0009342D /* Logout.swift */; };
 		AACB7F201D81A4FB0009342D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F1F1D81A4FB0009342D /* Helper.swift */; };
 		AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */; };
-		AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACB7F231D81C0190009342D /* ThirdNavigationController.swift */; };
 		AACB7F261D81E07D0009342D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACB7F251D81E07D0009342D /* MapKit.framework */; };
 		AACB7F281D81E0860009342D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACB7F271D81E0860009342D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -48,9 +47,9 @@
 		AA01E70E1D82F7E8002B0565 /* Facebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facebook.swift; sourceTree = "<group>"; };
 		AA01E7101D82F7FE002B0565 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		AA01E7121D82F808002B0565 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
-		AA01E7141D83064D002B0565 /* SecondNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondNavigationController.swift; path = "Federal Taphouse/SecondNavigationController.swift"; sourceTree = "<group>"; };
 		AA01E71B1D832932002B0565 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightTableVCTableViewController.swift; path = ../RightTableVCTableViewController.swift; sourceTree = "<group>"; };
 		AAA86A2C1D7F284200137A58 /* Federal Taphouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Federal Taphouse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA86A2F1D7F284300137A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAA86A341D7F284300137A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,7 +76,6 @@
 		AACB7F1D1D81A21A0009342D /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		AACB7F1F1D81A4FB0009342D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		AACB7F231D81C0190009342D /* ThirdNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdNavigationController.swift; path = "Federal Taphouse/ThirdNavigationController.swift"; sourceTree = "<group>"; };
 		AACB7F251D81E07D0009342D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AACB7F271D81E0860009342D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -131,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */,
-				AA01E7141D83064D002B0565 /* SecondNavigationController.swift */,
-				AACB7F231D81C0190009342D /* ThirdNavigationController.swift */,
 			);
 			name = "Supporting NVC";
 			path = ..;
@@ -170,6 +166,7 @@
 				AAB6B7A61D89E11500E33755 /* TutorialPageContentHolderViewController.swift */,
 				AAA86A461D7F2F1300137A58 /* HomeViewController.swift */,
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
+				AA8C29611D90706E00009ACF /* RightTableVCTableViewController.swift */,
 				AACB7F211D81BB080009342D /* ForgotPasswordViewController.swift */,
 				AACB7F1F1D81A4FB0009342D /* Helper.swift */,
 				AAA86A601D7F549000137A58 /* Data.swift */,
@@ -346,17 +343,16 @@
 				AAA86A611D7F549000137A58 /* Data.swift in Sources */,
 				AA01E70F1D82F7E8002B0565 /* Facebook.swift in Sources */,
 				AAA86A381D7F284300137A58 /* Federal_Taphouse.xcdatamodeld in Sources */,
+				AA8C29621D90706E00009ACF /* RightTableVCTableViewController.swift in Sources */,
 				AAB6B79D1D89D16200E33755 /* InitialViewController.swift in Sources */,
 				AAA86A471D7F2F1300137A58 /* HomeViewController.swift in Sources */,
 				AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */,
 				AAA86A551D7F3FEC00137A58 /* Invite.swift in Sources */,
-				AA01E7151D83064D002B0565 /* SecondNavigationController.swift in Sources */,
 				AAA86A4D1D7F35D500137A58 /* SWRevealViewController.m in Sources */,
 				AA1DA7731D8AEEDE005DD04E /* GalleryCollectionViewController.swift in Sources */,
 				AA01E7131D82F808002B0565 /* Instagram.swift in Sources */,
 				AAB6B7A71D89E11500E33755 /* TutorialPageContentHolderViewController.swift in Sources */,
 				AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */,
-				AACB7F241D81C0190009342D /* ThirdNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

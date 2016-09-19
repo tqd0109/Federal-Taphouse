@@ -24,5 +24,20 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {
+        self.switchToHomeViewController()
+    }
+    
+    private func switchToHomeViewController(){
+        // Create a main storyboard instance
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instantiate a navigation controller
+        let homeVC = storyboard.instantiateViewControllerWithIdentifier("LoginVC") as! HomeViewController
+        
+        // Get the app delegate
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        // Set navigation controller as root view controller
+        appDelegate.window?.rootViewController = homeVC
     }
 }

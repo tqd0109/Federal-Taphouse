@@ -1,19 +1,19 @@
 //
-//  BackTableVC.swift
+//  RightTableVCTableViewController.swift
 //  Federal Taphouse
 //
-//  Created by Trung Quoc Do on 9/6/16.
+//  Created by Trung Quoc Do on 9/19/16.
 //  Copyright © 2016 Software Merchant. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class BackTableVC: UITableViewController{
-    
+class RightTableVCTableViewController: UITableViewController {
+
     var TableArray = [String]()
     
     override func viewDidLoad() {
-        TableArray = ["Food Menu", "Beer List", "Invite Friends", "Deals For You!", "Find Us", "Contact Us", "Logout" ]
+        TableArray = ["Facebook", "Twitter", "Instagram", "Gallery"]
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -27,5 +27,6 @@ class BackTableVC: UITableViewController{
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TableArray.count
     }
-    
+
+
 }

@@ -168,12 +168,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="447.19999999999999" y="726.38680659670172"/>
+            <point key="canvasLocation" x="-238" y="1403"/>
         </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="5Uo-Wk-IFs">
             <objects>
-                <viewController id="f5f-mN-cZr" customClass="ForgotPasswordViewController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordVC" id="f5f-mN-cZr" customClass="ForgotPasswordViewController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jWd-oI-RRG"/>
                         <viewControllerLayoutGuide type="bottom" id="vaH-3v-B2i"/>
@@ -217,7 +217,6 @@
                                 </state>
                                 <connections>
                                     <action selector="backButtonPressed:" destination="f5f-mN-cZr" eventType="touchUpInside" id="xgh-zj-gC7"/>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="1G4-Wn-FNF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bYb-mA-h6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="1576"/>
+            <point key="canvasLocation" x="447" y="1403"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="Z4H-sh-cbS">
@@ -265,12 +264,77 @@
                     <navigationItem key="navigationItem" id="mr4-Am-6zb"/>
                     <connections>
                         <segue destination="P4D-vF-kYk" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="56z-yk-YT9"/>
-                        <segue destination="Ssu-cc-ZtR" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="I1F-ag-ak1"/>
+                        <segue destination="eFy-CB-UtC" kind="custom" identifier="sw_right" customClass="SWRevealViewControllerSegueSetController" id="52H-1e-7mi"/>
+                        <segue destination="0j9-5W-bHm" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="QpW-NK-jK7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lza-7G-Mva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1892" y="613.94302848575717"/>
+            <point key="canvasLocation" x="1425" y="556"/>
+        </scene>
+        <!--Right TableVC Table View Controller-->
+        <scene sceneID="5Xs-4a-UGb">
+            <objects>
+                <tableViewController id="eFy-CB-UtC" customClass="RightTableVCTableViewController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mfP-4y-rqU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Facebook" id="MuJ-v0-Tvh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MuJ-v0-Tvh" id="xfL-7R-fXg">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="4RE-78-pKN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="BRh-Ce-jFv"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Twitter" id="vAE-2C-91B">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAE-2C-91B" id="qW8-bR-rfp">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="3os-5S-5A8" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="tK5-cu-DHE"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Instagram" id="nIY-cp-yyy">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nIY-cp-yyy" id="Jlb-Gq-uJJ">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="f2Y-gN-9oE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="XrS-fH-6tG"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Gallery" id="v8h-XO-Zwz">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v8h-XO-Zwz" id="VDe-D5-fdz">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Xk2-je-uBW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Das-9V-5tB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eFy-CB-UtC" id="XUU-q2-XbQ"/>
+                            <outlet property="delegate" destination="eFy-CB-UtC" id="UVc-Fi-Jzn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouw-kA-DcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="555"/>
         </scene>
         <!--Facebook-->
         <scene sceneID="Qo8-X8-t8T">
@@ -400,7 +464,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="2093" y="-1013"/>
+            <point key="canvasLocation" x="5118" y="1845"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="okO-Nf-sgR">
@@ -496,7 +560,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Sy5-hS-T63" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="NPv-aB-Jrk"/>
+                                    <segue destination="oQ2-YU-eXU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="3NM-hp-wKl"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contact Us" id="kaI-Zc-91u">
@@ -510,52 +574,8 @@
                                     <segue destination="kLf-a8-DIl" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="7Sx-9M-e6w"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Facebook" id="G2c-7s-Rnf">
-                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G2c-7s-Rnf" id="7f3-ti-H5p">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="4RE-78-pKN" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="xYE-Vo-g1U"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Twitter" id="muI-cQ-2LS">
-                                <rect key="frame" x="0.0" y="336" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muI-cQ-2LS" id="sQu-mJ-eZd">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="3os-5S-5A8" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="BPe-gd-QbP"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Instagram" id="HzS-aD-3aO">
-                                <rect key="frame" x="0.0" y="380" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HzS-aD-3aO" id="XBR-H4-KVX">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="f2Y-gN-9oE" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="9Hv-0O-FGi"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Gallery" id="umS-8M-yDc">
-                                <rect key="frame" x="0.0" y="424" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="umS-8M-yDc" id="l8q-pu-1UY">
-                                    <frame key="frameInset" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Xk2-je-uBW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="sXc-NV-pQ2"/>
-                                </connections>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" id="LV7-vA-QJe">
-                                <rect key="frame" x="0.0" y="468" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LV7-vA-QJe" id="0Z4-yD-haV">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -575,7 +595,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wZ-RI-5v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2746.4000000000001" y="400.74962518740631"/>
+            <point key="canvasLocation" x="2196" y="555"/>
         </scene>
         <!--Menu-->
         <scene sceneID="g4J-2l-0Ad">
@@ -613,7 +633,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sBx-ea-dGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2578" y="-385"/>
+            <point key="canvasLocation" x="1078" y="1846"/>
         </scene>
         <!--Invite-->
         <scene sceneID="iva-Wj-Qfd">
@@ -668,24 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgo-qg-KLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3589.5999999999999" y="309.89505247376314"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="N5y-35-5OE">
-            <objects>
-                <navigationController storyboardIdentifier="NaviVC" id="Ssu-cc-ZtR" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Rgh-VN-f66">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="0j9-5W-bHm" kind="relationship" relationship="rootViewController" id="PnO-5H-Azd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AYG-V5-Twa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1418" y="1559"/>
+            <point key="canvasLocation" x="3726" y="1845"/>
         </scene>
         <!--Gallery Collection View Controller-->
         <scene sceneID="a8G-iQ-Tdn">
@@ -730,7 +733,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nn3-IO-z7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3468" y="1156.3718140929536"/>
+            <point key="canvasLocation" x="-142" y="-296"/>
         </scene>
         <!--Deals-->
         <scene sceneID="0ql-0G-Kmj">
@@ -768,7 +771,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i05-m8-ShJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4298.3999999999996" y="1132.9835082458771"/>
+            <point key="canvasLocation" x="4417" y="1845"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="j7q-Ub-87f">
@@ -804,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AH-re-dWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3048" y="1926"/>
+            <point key="canvasLocation" x="3074" y="1846"/>
         </scene>
         <!--Find Us-->
         <scene sceneID="pnA-CN-umL">
@@ -845,7 +848,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2685" y="2654"/>
+            <point key="canvasLocation" x="1719" y="1845"/>
         </scene>
         <!--Tutorial Page Content Holder View Controller-->
         <scene sceneID="f7E-5P-4h6">
@@ -877,50 +880,12 @@
             </objects>
             <point key="canvasLocation" x="-324" y="617.54122938530736"/>
         </scene>
-        <!--Third Navigation Controller-->
-        <scene sceneID="0s3-a8-kVc">
-            <objects>
-                <navigationController storyboardIdentifier="ThirdNavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="Vhw-Uc-FaQ" customClass="ThirdNavigationController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="HQ7-bF-IV4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NpF-h2-zNE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="f5f-mN-cZr" kind="relationship" relationship="rootViewController" id="0WO-j8-u6l"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyv-iq-2iF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-555" y="1576"/>
-        </scene>
-        <!--Second Navigation Controller-->
-        <scene sceneID="hCJ-zO-lLs">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sy5-hS-T63" customClass="SecondNavigationController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gdx-ug-X10">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="oQ2-YU-eXU" kind="relationship" relationship="rootViewController" id="89Y-0f-qe8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WdC-Zf-YPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1873" y="2654"/>
-        </scene>
         <!--First Navigation View Controller-->
         <scene sceneID="Gfe-wg-LPi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MCm-nB-3Xe" customClass="FirstNavigationViewController" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="RGe-Q3-tNL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RGe-Q3-tNL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
