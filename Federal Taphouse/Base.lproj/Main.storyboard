@@ -1126,7 +1126,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="cmh-L2-gx9" imageView="q0q-Jm-cpd" style="IBUITableViewCellStyleDefault" id="w24-ZY-aq5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Extended Hoppy Hour from 4pm-6pm" textLabel="cmh-L2-gx9" imageView="q0q-Jm-cpd" style="IBUITableViewCellStyleDefault" id="w24-ZY-aq5">
                                 <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w24-ZY-aq5" id="J3v-jv-6Jf">
