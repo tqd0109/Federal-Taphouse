@@ -989,7 +989,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="zwH-Ly-dJ7" style="IBUITableViewCellStyleDefault" id="ySn-lx-6f9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="$6 Cheesesteaks starting at 5pm. 10 Select beers only $2 from 6pm-8pm" textLabel="zwH-Ly-dJ7" imageView="WYn-rA-VZd" style="IBUITableViewCellStyleDefault" id="ySn-lx-6f9">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ySn-lx-6f9" id="52c-dc-6WU">
@@ -997,12 +997,100 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zwH-Ly-dJ7">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Monday-50" id="WYn-rA-VZd">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="$6 Cheeseburgers starting at 5pm" textLabel="xSU-Xa-wNP" imageView="Swr-uB-kRX" style="IBUITableViewCellStyleDefault" id="jgy-s9-z4t">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jgy-s9-z4t" id="trh-Yj-kRE">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xSU-Xa-wNP">
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Tuesday-50" id="Swr-uB-kRX">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Buck a Shucks and IPAs- $2 off all IPAs 6pm-8pm and $1 Oysters beginning at 5pm" textLabel="ptX-2a-u8Z" imageView="O4j-HC-CBi" style="IBUITableViewCellStyleDefault" id="6SG-XO-jYa">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6SG-XO-jYa" id="ElI-Ny-ezx">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ptX-2a-u8Z">
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Wednesday-50" id="O4j-HC-CBi">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="1/2 price 10 select beers 6-8pm and $5 cheese pizzas beginning at 5pm" textLabel="rgu-WU-NXY" imageView="w0L-XK-SjA" style="IBUITableViewCellStyleDefault" id="Xnx-OV-Cfa">
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xnx-OV-Cfa" id="E4h-8A-MQj">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rgu-WU-NXY">
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Thursday-50" id="w0L-XK-SjA">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Extended Hoppy Hour from 4pm-6pm" textLabel="cmh-L2-gx9" imageView="q0q-Jm-cpd" style="IBUITableViewCellStyleDefault" id="w24-ZY-aq5">
+                                <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w24-ZY-aq5" id="J3v-jv-6Jf">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cmh-L2-gx9">
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Friday-50" id="q0q-Jm-cpd">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -1150,17 +1238,22 @@
         <image name="End Call-48" width="48" height="48"/>
         <image name="Facebook-48" width="48" height="48"/>
         <image name="Feedback-48" width="48" height="48"/>
+        <image name="Friday-50" width="50" height="50"/>
         <image name="Gallery-50" width="50" height="50"/>
         <image name="Google Maps-48" width="48" height="48"/>
         <image name="Instagram-48" width="48" height="48"/>
         <image name="Invite-48" width="48" height="48"/>
+        <image name="Monday-50" width="50" height="50"/>
         <image name="No Food-50" width="50" height="50"/>
         <image name="Picture2" width="849" height="566"/>
         <image name="Picture4" width="785" height="566"/>
         <image name="Price Tag-50" width="50" height="50"/>
         <image name="Reviewer Male-48" width="48" height="48"/>
         <image name="Star Filled-50" width="50" height="50"/>
+        <image name="Thursday-50" width="50" height="50"/>
+        <image name="Tuesday-50" width="50" height="50"/>
         <image name="Twitter-48" width="48" height="48"/>
+        <image name="Wednesday-50" width="50" height="50"/>
         <image name="fed.png" width="978" height="499"/>
     </resources>
     <inferredMetricsTieBreakers>
