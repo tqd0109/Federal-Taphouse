@@ -16,9 +16,7 @@ class Beer: UITableViewController, NSXMLParserDelegate {
     var posts = NSMutableArray()
     var elements = NSMutableDictionary()
     var element = NSString()
-//    var title1 = NSMutableString()
-//    var date = NSMutableString()
-    
+
     var beer_name = NSMutableString()
     var beer_location = NSMutableString()
     var beer_ABV = NSMutableString()

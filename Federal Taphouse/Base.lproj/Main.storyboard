@@ -589,7 +589,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Food Menu" textLabel="g08-rL-E7S" imageView="hqn-wV-7Ii" style="IBUITableViewCellStyleDefault" id="VEc-js-A8d">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Starters" textLabel="g08-rL-E7S" imageView="hqn-wV-7Ii" style="IBUITableViewCellStyleDefault" id="VEc-js-A8d">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VEc-js-A8d" id="YX5-gh-2dd">
@@ -603,7 +603,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="No Food-50" id="hqn-wV-7Ii">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Bread-50" id="hqn-wV-7Ii">
                                             <frame key="frameInset" minX="15" width="43" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -612,11 +612,36 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="0j9-5W-bHm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="RCV-tf-3qN"/>
+                                    <segue destination="0j9-5W-bHm" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="sOc-EO-KdG"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Main Course" textLabel="P5l-3Y-L1m" imageView="gmv-zF-RgY" style="IBUITableViewCellStyleDefault" id="LV7-vA-QJe">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LV7-vA-QJe" id="0Z4-yD-haV">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P5l-3Y-L1m">
+                                            <frame key="frameInset" minX="73" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Bull-50" id="gmv-zF-RgY">
+                                            <frame key="frameInset" minX="15" width="43" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="gm4-L8-eic" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="sBI-Cj-Lnq"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Beer List" textLabel="WM6-IX-naJ" imageView="iJX-JI-jCE" style="IBUITableViewCellStyleDefault" id="udi-Ly-ofN">
-                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="udi-Ly-ofN" id="cJd-hO-VIs">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -641,7 +666,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Invite Friends" textLabel="gYK-zX-OMC" imageView="ecY-xB-0f9" style="IBUITableViewCellStyleDefault" id="BgA-9o-yUO">
-                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BgA-9o-yUO" id="Vbt-Nd-Scy">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -666,7 +691,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Deals For You!" textLabel="1yb-Te-slg" imageView="rdL-vk-Jz1" style="IBUITableViewCellStyleDefault" id="hie-KF-nqp">
-                                <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hie-KF-nqp" id="spq-gj-ttv">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -691,7 +716,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Find Us" textLabel="QpC-f0-Xcu" imageView="K9X-FR-egn" style="IBUITableViewCellStyleDefault" id="wdU-3Z-OCq">
-                                <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="248" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wdU-3Z-OCq" id="bXf-W1-Bsx">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -716,7 +741,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Contact Us" textLabel="KuA-0h-n6Z" imageView="DGm-tI-grb" style="IBUITableViewCellStyleDefault" id="kaI-Zc-91u">
-                                <rect key="frame" x="0.0" y="248" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kaI-Zc-91u" id="Fox-bJ-Ce1">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -740,21 +765,21 @@
                                     <segue destination="kLf-a8-DIl" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="7Sx-9M-e6w"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" textLabel="P5l-3Y-L1m" imageView="gmv-zF-RgY" style="IBUITableViewCellStyleDefault" id="LV7-vA-QJe">
-                                <rect key="frame" x="0.0" y="292" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Logout" textLabel="Ma3-c5-sJA" imageView="oBr-Yx-IhI" style="IBUITableViewCellStyleDefault" id="DHg-P8-D27">
+                                <rect key="frame" x="0.0" y="336" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LV7-vA-QJe" id="0Z4-yD-haV">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DHg-P8-D27" id="iQR-LE-yUU">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P5l-3Y-L1m">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ma3-c5-sJA">
                                             <frame key="frameInset" minX="73" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Close Window-48" id="gmv-zF-RgY">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Close Window-48" id="oBr-Yx-IhI">
                                             <frame key="frameInset" minX="15" width="43" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -762,7 +787,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="qi3-2r-5fW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4SK-oW-pE9"/>
+                                    <segue destination="qi3-2r-5fW" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="nwT-IK-j6o"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -777,10 +802,38 @@
             </objects>
             <point key="canvasLocation" x="2196" y="555"/>
         </scene>
-        <!--Menu-->
+        <!--Main Course-->
+        <scene sceneID="E2s-DI-ZSz">
+            <objects>
+                <tableViewController id="gm4-L8-eic" customClass="MainCourse" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yD1-5j-FpY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="l7H-tq-Lwg">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7H-tq-Lwg" id="6rE-xe-fTB">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gm4-L8-eic" id="uKj-Eh-oqC"/>
+                            <outlet property="delegate" destination="gm4-L8-eic" id="Uwa-eC-FJd"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Mc-6Y-aTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="755"/>
+        </scene>
+        <!--Starters-->
         <scene sceneID="g4J-2l-0Ad">
             <objects>
-                <tableViewController id="0j9-5W-bHm" customClass="Menu" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0j9-5W-bHm" customClass="Starters" customModule="Federal_Taphouse" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VpW-F4-ii8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1073,7 +1126,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Extended Hoppy Hour from 4pm-6pm" textLabel="cmh-L2-gx9" imageView="q0q-Jm-cpd" style="IBUITableViewCellStyleDefault" id="w24-ZY-aq5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="cmh-L2-gx9" imageView="q0q-Jm-cpd" style="IBUITableViewCellStyleDefault" id="w24-ZY-aq5">
                                 <rect key="frame" x="0.0" y="204" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w24-ZY-aq5" id="J3v-jv-6Jf">
@@ -1234,6 +1287,8 @@
     </scenes>
     <resources>
         <image name="Bavarian Wheat Beer-48" width="48" height="48"/>
+        <image name="Bread-50" width="50" height="50"/>
+        <image name="Bull-50" width="50" height="50"/>
         <image name="Close Window-48" width="48" height="48"/>
         <image name="End Call-48" width="48" height="48"/>
         <image name="Facebook-48" width="48" height="48"/>
@@ -1244,7 +1299,6 @@
         <image name="Instagram-48" width="48" height="48"/>
         <image name="Invite-48" width="48" height="48"/>
         <image name="Monday-50" width="50" height="50"/>
-        <image name="No Food-50" width="50" height="50"/>
         <image name="Picture2" width="849" height="566"/>
         <image name="Picture4" width="785" height="566"/>
         <image name="Price Tag-50" width="50" height="50"/>
@@ -1257,6 +1311,6 @@
         <image name="fed.png" width="978" height="499"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RCV-tf-3qN"/>
+        <segue reference="sOc-EO-KdG"/>
     </inferredMetricsTieBreakers>
 </document>
