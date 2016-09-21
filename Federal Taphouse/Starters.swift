@@ -9,35 +9,25 @@
 import UIKit
 
 class Starters: UITableViewController {
+    
+    var section = ["Appetizers", "Greens", "Fed Fries"]
 
-    var names = ["Appetizers": ["House Made Soft Pretzel", "Bacon Jam", "Hummus", "House Made Pierogis", "Coal Fired Wings", "Wood Fired Stuffed Jalapeños", "Devils on Horseback", "Dreamweaver Mussels", "Crab Mac and Cheese", "Charcuterie Board", "Soup of the Day"], "Greens": ["Arugula Salad", "Caesar Salad", "Bibb Lettuce", "Asian Vegetable Salad", "Panzanella"], "Fed Fries": ["Aioli", "Poutine", "Braised Short Rib"]]
-    
-    struct Objects {
-        
-        var sectionName : String!
-        var sectionObjects : [String]!
-    }
-    
-    var objectArray = [Objects]()
+    var items = [["House Made Soft Pretzel", "Bacon Jam", "Hummus", "House Made Pierogis", "Coal Fired Wings", "Wood Fired Stuffed Jalapeños", "Devils on Horseback", "Dreamweaver Mussels", "Crab Mac and Cheese", "Charcuterie Board", "Soup of the Day"], ["Arugula Salad", "Caesar Salad", "Bibb Lettuce", "Asian Vegetable Salad", "Panzanella"], ["Aioli", "Poutine", "Braised Short Rib"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        
-        for (key, value) in names {
-            objectArray.append(Objects(sectionName: key, sectionObjects: value))
-        }
     }
     
-    // MARK: - Table view data source
+    // Construct tableview
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return objectArray.count
+        return self.section.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objectArray[section].sectionObjects.count
+        return self.items [section].count
     }
     
     
@@ -45,13 +35,13 @@ class Starters: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         // Configure the cell...
-        cell.textLabel?.text = objectArray[indexPath.section].sectionObjects[indexPath.row]
+        cell.textLabel?.text = self.items[indexPath.section][indexPath.row]
+        
         return cell
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        return objectArray[section].sectionName
+        return self.section [section]
     }
-
 }
