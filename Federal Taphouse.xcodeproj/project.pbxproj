@@ -12,6 +12,8 @@
 		AA01E7111D82F7FE002B0565 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7101D82F7FE002B0565 /* Twitter.swift */; };
 		AA01E7131D82F808002B0565 /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E7121D82F808002B0565 /* Instagram.swift */; };
 		AA01E71C1D832932002B0565 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01E71B1D832932002B0565 /* Beer.swift */; };
+		AA176B581D92E3F500A17872 /* BeerNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA176B571D92E3F500A17872 /* BeerNaviController.swift */; };
+		AA176B5C1D9309D900A17872 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA176B5B1D9309D900A17872 /* BeerListTableViewController.swift */; };
 		AA1DA7731D8AEEDE005DD04E /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */; };
 		AA2564A81D90F78B00B748EC /* Starters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2564A71D90F78A00B748EC /* Starters.swift */; };
 		AA2564AA1D90F7A500B748EC /* MainCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2564A91D90F7A500B748EC /* MainCourse.swift */; };
@@ -49,6 +51,8 @@
 		AA01E7101D82F7FE002B0565 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		AA01E7121D82F808002B0565 /* Instagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
 		AA01E71B1D832932002B0565 /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		AA176B571D92E3F500A17872 /* BeerNaviController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerNaviController.swift; sourceTree = "<group>"; };
+		AA176B5B1D9309D900A17872 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		AA1DA7721D8AEEDE005DD04E /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
 		AA2564A71D90F78A00B748EC /* Starters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Starters.swift; sourceTree = "<group>"; };
 		AA2564A91D90F7A500B748EC /* MainCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourse.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				AAB6B7A81D89E22500E33755 /* FirstNavigationController.swift */,
+				AA176B571D92E3F500A17872 /* BeerNaviController.swift */,
 			);
 			name = "Supporting NVC";
 			path = ..;
@@ -154,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				AAA86A501D7F37FA00137A58 /* BackTableVC.swift */,
+				AA01E71B1D832932002B0565 /* Beer.swift */,
+				AA176B5B1D9309D900A17872 /* BeerListTableViewController.swift */,
 				AA2564A71D90F78A00B748EC /* Starters.swift */,
 				AA2564A91D90F7A500B748EC /* MainCourse.swift */,
 				AAA86A541D7F3FEC00137A58 /* Invite.swift */,
@@ -161,7 +168,6 @@
 				AAA86A5C1D7F4B3600137A58 /* FindUs.swift */,
 				AAA86A581D7F400500137A58 /* ContactUs.swift */,
 				AACB7F1D1D81A21A0009342D /* Logout.swift */,
-				AA01E71B1D832932002B0565 /* Beer.swift */,
 			);
 			name = "Left Table";
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACB7F221D81BB080009342D /* ForgotPasswordViewController.swift in Sources */,
+				AA176B581D92E3F500A17872 /* BeerNaviController.swift in Sources */,
 				AA2564AA1D90F7A500B748EC /* MainCourse.swift in Sources */,
 				AAA86A5D1D7F4B3600137A58 /* FindUs.swift in Sources */,
 				AAA86A591D7F400500137A58 /* ContactUs.swift in Sources */,
@@ -381,6 +388,7 @@
 				AA01E7131D82F808002B0565 /* Instagram.swift in Sources */,
 				AAB6B7A71D89E11500E33755 /* TutorialPageContentHolderViewController.swift in Sources */,
 				AACB7F1E1D81A21A0009342D /* Logout.swift in Sources */,
+				AA176B5C1D9309D900A17872 /* BeerListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
